@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+p {
+	font-family: 'Kanit', sans-serif;
+	font-family: 'Architects Daughter', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	background: rgb(12, 90, 60);
+	font-family: 'Architects Daughter', sans-serif;
+}
+h3 {
+	text-align: center;
+	color: #fff;
+	padding-top: 1%;
+	padding-bottom: 0;
+}
+a {
+	text-align: left;
+	color: #fefefe;
+}
+
+#game-result {
+	border-bottom: #fefefe 2px solid;
+	padding: 5px;
+}
+
+.game-surface {
+	width: 500px;
+	height: 500px;
+	padding: 5px;
+	border: solid 5px orangered;
+	border-radius: 15px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.background-image {
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+}
+.images {
+	width: calc(25% - 10px);
+	height: calc(25% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+}
+
+.images:hover {
+	transform: scale(0.95);
+	transition: transform 0.2s;
+}
+
+.images.spin {
+	transform: rotateY(180deg);
+}
+
+.img-face,
+.img-neck {
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	position: absolute;
+	border-radius: 10px;
+	background: rgb(248, 244, 244);
+	backface-visibility: hidden;
+}
+
+.img-face {
+	transform: rotateY(180deg);
+	background-color: whitesmoke;
+}
+.done {
+	border-radius: 15px;
+	border: solid 15px rgb(15, 95, 65);
+}
+#scores {
+	color: #fefefe;
+	text-align: left;
+}
+
+/*-----------------------------------------Modal (https://www.w3schools.com/howto/howto_css_modals.asp)----------*/
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(56, 26, 26, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: hsla(14, 82%, 58%, 0.9);
+	color: #fefefe;
+	margin: 10% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid orangered;
+	border-radius: 3%;
+	width: 80%; /* Could be more or less, depending on screen size */
+	height: 80%;
+	font-size: 36px;
+	text-align: center;
+}
+
+/* The Close Button (X) */
+.close {
+	color: rgb(255, 247, 247);
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*-------------------- close (X) in the top right corner */
+.close-to-main {
+	color: rgb(255, 255, 255);
+	margin-left: 3em;
+	text-align: right;
+	padding: 5px 5px 0 0;
+}
+/*--------------------- Again text in mordal*/
+.again {
+	color: #0c5a3c;
+	/* float: right; */
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.again:hover,
+.again:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*--------------------------------------- Info text modal*/
+.info-text {
+	text-align: left;
+	border-bottom: #fefefe 2px solid;
+	padding: 20px;
+}
+
+.surface-text {
+	text-align: center;
+	cursor: pointer;
+}
+.surface-text:hover {
+	color: orangered;
+}
+
+.hidden {
+	visibility: hidden;
+}
+/*----------------------- Media Queries*/
+@media (max-width: 641px) {
+	.info-text {
+		font-size: 18px;
+	}
+	.again {
+		color: #0c5a3c;
+		padding-top: 20px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	#game-result {
+		font-size: 24px;
+		text-align: left;
+	}
+	#close {
+		font-size: 24px;
+	}
+	.game-surface {
+		width: 340px;
+		height: 340px;
+	}
+}
+
+@media (max-width: 481px) {
+	.info-text {
+		font-size: 16px;
+		padding: 0;
+	}
+	.again {
+		color: #0c5a3c;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	#game-result {
+		font-size: 18px;
+		text-align: left;
+	}
+	#close {
+		font-size: 18px;
+	}
+	.game-surface {
+		width: 320px;
+		height: 320px;
+	}
+}

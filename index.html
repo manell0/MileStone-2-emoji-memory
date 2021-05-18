@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Memory game with emojis to be solved in as few clicks as possible." />
+		<!---->
+
+		<script src="lib/easytimer/dist/easytimer.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/dist/easytimer.min.js"></script>
+
+		<script></script>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/style.css" />
+
+		<title>A Game Of Emoji Memory</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<h3>
+						<p class="hidden" onclick="startGame()">Start The Memory Game</p>
+						<p class="surface-text" onclick="infoFunction()">Info About The Game</p>
+					</h3>
+				</div>
+			</div>
+			<!--------------------------------------------------- Main surface -->
+			<div class="row">
+				<div class="col-sm">
+					<section class="game-surface">
+						<div class="background-image">
+							<img
+								class="img-neck info-text"
+								onclick="infoFunction()"
+								src="assets/images/code-institue-background-emoji-text.png"
+								alt="Code Instetute logo"
+							/>
+						</div>
+					</section>
+				</div>
+			</div>
+			<h3>
+				<p class="surface-text" onclick="startGame()">Start The Memory Game</p>
+			</h3>
+		</div>
+
+		<!-- The Modal Area for information about the game -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="info-text">
+					<p>
+						This emoji memory game should be solved with as few clicks as possible and in as short a time as possible.
+					</p>
+					<p>Just click on the Code Institute pictures and see what happens ... You will understand!</p>
+				</div>
+
+				<span class="again">Start The Memory Game</span>
+				<span class="close" id="close">Back To Main</span>
+			</div>
+		</div>
+
+		<script src="assets/scripts/index-script.js"></script>
+	</body>
+</html>
