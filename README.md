@@ -112,7 +112,9 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 The information architecture was organized in a hierarchical tree structure in order to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
+
 ![Hierarchical tree structure](assets/stuff/structure.jpg)
+
 
 ### Skeleton
 
@@ -120,7 +122,9 @@ Wireframe mockup were created in a Figma Workspace with providing a positive use
 
 **_[Link to Figma Wireframes as PDF](assets/stuff/figma.pdf)_**
 
+
 ![Wireframes screenShot as PDF](assets/stuff/wireframe.jpg)
+
 
 [Back to the top](#table-of-contents)
 
