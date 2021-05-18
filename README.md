@@ -112,8 +112,14 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 The information architecture was organized in a hierarchical tree structure in order to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
-![Hierarchical tree structure](assets/stuff/structure.jpg)
+
+**_[Link to Strategy Trade-off as PDF](assets/stuff/strategy-trade-off.pdf)_**
+
 ![Spreadsheet Strategy](assets/stuff/structure.jpg)
+
+**_[Link to Strategy Trade-off as PDF](assets/stuff/strategy-trade-off.pdf)_**
+
+![Spreadsheet Strategy](assets/stuff/strategy-trade-off.jpg)
 
 ### Skeleton
 
