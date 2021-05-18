@@ -113,22 +113,19 @@ With these goals in mind, a strategy table was created to determine the trade-of
 The information architecture was organized in a hierarchical tree structure in order to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
 
-**_[Link to Strategy Trade-off as PDF](assets/stuff/strategy-trade-off.pdf)_**
 
-![Spreadsheet Strategy](assets/stuff/structure.jpg)
 
-**_[Link to Strategy Trade-off as PDF](assets/stuff/strategy-trade-off.pdf)_**
+![Spreadsheet Strategy](assets/stuff/Structure.jpg)
 
-![Spreadsheet Strategy](assets/stuff/strategy-trade-off.jpg)
 
 ### Skeleton
 
 Wireframe mockup were created in a Figma Workspace with providing a positive user experience in mind:
 
-**_[Link to Figma Wireframes as PDF](assets/stuff/figma.pdf)_**
+**_[Link to Figma Wireframes as PDF](assets/stuff/Figma.pdf)_**
 
-![Wireframes screenShot as PDF](assets/stuff/wireframe.jpg)
-![Spreadsheet Strategy](assets/stuff/wireframe.jpg)
+![Wireframes screenShot as PDF](assets/stuff/Wireframe.jpg)
+
 
 
 [Back to the top](#table-of-contents)
