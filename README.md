@@ -112,11 +112,7 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 The information architecture was organized in a hierarchical tree structure in order to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
-
-
-
-![Spreadsheet Strategy](assets/stuff/Structure.jpg)
-
+![Hierarchical tree structure](assets/stuff/Structure.jpg)
 
 ### Skeleton
 
@@ -125,9 +121,6 @@ Wireframe mockup were created in a Figma Workspace with providing a positive use
 **_[Link to Figma Wireframes as PDF](assets/stuff/Figma.pdf)_**
 
 ![Wireframes screenShot as PDF](assets/stuff/Wireframe.jpg)
-
-
-
 [Back to the top](#table-of-contents)
 
 ### Surface
@@ -142,7 +135,7 @@ Wireframe mockup were created in a Figma Workspace with providing a positive use
 
 The main colors used throughout the website are a mixture of dark green, White and orange.
 
-The chosen color schemeare are chosen to get a clear and nice view to integrate with.
+The chosen color scheme are chosen to get a clear and nice view to integrate with.
 
 - I Find the color combination on site [COLORS](https://coolors.co/)
 
@@ -173,11 +166,11 @@ Each page on the website has a consistent responsive navigation system through s
 
 #### Home Page and the Game Page
 
-The home and game page have the same structure in terms of appearance, location and links..
+The home and game page have the same structure in terms of appearance, location and links.
 
 ### Existing Features
 
-- Start Page with link to info and the game whit a fancy image
+- Start Page with link to info and the game with a fancy image
 - Game Page with the game surface
 
 <!--#### Social Icons
@@ -317,12 +310,11 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
 
 - [Stack Overflow](https://stackoverflow.com/)
-- [W3Schools](https://www.w3schools.com/) used a lot, and the back button in my movie.html came from there.
+- [W3Schools](https://www.w3schools.com/) used a lot, and Modal pop up window came from there.
 - [Bootstrap](https://getbootstrap.com/) used for my grid system throughout the site
-- [Font Awesome](https://fontawesome.com/) used for my icons
 - [CSS Tricks](https://css-tricks.com/) used for various spacing tricks and placement technology
 - [COLORS](https://coolors.co/)
-- [Google fonts](https://fonts.google.com/) used for my fonts (Exo 2 and Open Sans)
+- [Google fonts](https://fonts.google.com/) used for my fonts (Architects Daughter and Open Sans)
 
 # Acknowledgements
 
