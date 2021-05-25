@@ -5,12 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Memory game with emojis to be solved in as few clicks as possible." />
-		<!---->
+		<!-- Easy timer for time on the game page -->
 		<script src="lib/easytimer/dist/easytimer.min.js"></script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/dist/easytimer.min.js"></script>
-
-		<script></script>
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,30 +17,38 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="assets/style.css" />
-
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+			integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+			crossorigin="anonymous"
+		/>
 		<title>A Game Of Emoji Memory</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
-					<span class="close close-to-main" title="Back to Home">&times;</span>
 					<h3 id="scores">Scores and Time</h3>
+				</div>
+				<div class="col-sm margins">
+					<span class="close close-to-main" title="Back to Home">&times;</span>
+					<span id="pause-start" title="Pause the game"> <i class="fas fa-pause"></i> </span
+					><span id="restart" title="Restart the game"> <i class="fas fa-sync"></i> </span
+					><span id="mute-sound" title="Mute the sound"> <i class="fas fa-volume-down"> </i> </span>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm">
-					<!-------------------------------------------- The Game Surface -->
-					<section class="game-surface">
+					<div class="game-surface">
 						<div class="images" data-num="1">
-							<img class="img-face" src="assets/images/whatsap-smiley-face.png"" alt="Whatsap smiley emoji" />
+							<img class="img-face" src="assets/images/whatsap-smiley-face.png" alt="Whatsap smiley emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
 						<div class="images" data-num="1">
-							<img class="img-face" src="assets/images/whatsap-smiley-face.png"" alt="Whatsap smiley emoji" />
+							<img class="img-face" src="assets/images/whatsap-smiley-face.png" alt="Whatsap smiley emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-
 						<div class="images" data-num="2">
 							<img class="img-face" src="assets/images/face-big-smile.png" alt="Big smile emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
@@ -50,7 +57,6 @@
 							<img class="img-face" src="assets/images/face-big-smile.png" alt="Big smile emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-
 						<div class="images" data-num="3">
 							<img class="img-face" src="assets/images/sad.jpg" alt="Sad emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
@@ -59,7 +65,6 @@
 							<img class="img-face" src="assets/images/sad.jpg" alt="Sad emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-
 						<div class="images" data-num="4">
 							<img class="img-face" src="assets/images/smiley.emoji.png" alt="Smiley emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
@@ -68,7 +73,6 @@
 							<img class="img-face" src="assets/images/smiley.emoji.png" alt="Smiley emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-
 						<div class="images" data-num="5">
 							<img class="img-face" src="assets/images/angry-emoji.png" alt="Angry emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
@@ -77,7 +81,6 @@
 							<img class="img-face" src="assets/images/angry-emoji.png" alt="Angry emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-
 						<div class="images" data-num="6">
 							<img class="img-face" src="assets/images/chocked-angry.jpg" alt="Checked angry emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
@@ -86,34 +89,32 @@
 							<img class="img-face" src="assets/images/chocked-angry.jpg" alt="Checked angry emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-
 						<div class="images" data-num="7">
-							<img class="img-face" src="assets/images/scared.jpg"" alt="Scared emoji" />
+							<img class="img-face" src="assets/images/scared.jpg" alt="Scared emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
 						<div class="images" data-num="7">
-							<img class="img-face" src="assets/images/scared.jpg"" alt="Scared emoji" />
+							<img class="img-face" src="assets/images/scared.jpg" alt="Scared emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
 						<div class="images" data-num="8">
-							<img class="img-face" src="assets/images/wow-emoji.jpg"" alt="Wow emoji" />
+							<img class="img-face" src="assets/images/wow-emoji.jpg" alt="Wow emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
 						<div class="images" data-num="8">
-							<img class="img-face" src="assets/images/wow-emoji.jpg"" alt="Wow emoji" />
+							<img class="img-face" src="assets/images/wow-emoji.jpg" alt="Wow emoji" />
 							<img class="img-neck" src="assets/images/code-institue.png" alt="Code Instetute logo" />
 						</div>
-					</section>
+					</div>
 				</div>
 			</div>
 		</div>
-
 		<!-- The Modal  for clicks and time -->
 		<div id="myModal" class="modal">
 			<!-- Modal content -->
 			<div class="modal-content">
 				<p id="game-result"></p>
-
+				<!-- Play again -->
 				<span class="again">Play Again</span>
 				<span class="close" id="close">Back To Main</span>
 			</div>
