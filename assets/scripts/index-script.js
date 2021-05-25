@@ -1,5 +1,3 @@
-'use strict';
-
 var modal = document.getElementById('myModal');
 
 function infoFunction() {
@@ -18,17 +16,11 @@ function Modal() {
 	modal.style.display = 'block';
 } //--------------------------------------
 
-// Clicks on <span> (x), close the modal
-closeModal.onclick = function () {
-	modal.style.display = 'none';
-	location.href = 'index.html';
-};
-
 closeMain.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'index.html';
 };
-
+// Play again
 again.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'game.html';
