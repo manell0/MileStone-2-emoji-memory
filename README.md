@@ -1,8 +1,6 @@
 # Memory, The Classic Single Game
 
-Here comes the Markup
-
-<!-- ![The Markup from responsive design](assets/stuff/markup.jpg) -->
+![The Markup from responsive design](assets/stuff/markup.jpg)
 
 ## Milestone project 2 (Code Institute)
 
@@ -50,7 +48,7 @@ This is a simple website where you can play the classic game of memory.
 
 - This is the second of four Milestone projects that the developer must complete during his Full Stack web development program at The Code Institute.
 
-- The most important requirements were to build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals. [**HTML5**](https://en.wikipedia.org/wiki/HTML5) and [**CSS3**](https://en.wikipedia.org/wiki/CSS) and [**JavaScript**].
+- The most important requirements were to build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals. [**HTML5**](https://en.wikipedia.org/wiki/HTML5) and [**CSS3**](https://en.wikipedia.org/wiki/CSS) and [**JavaScript**](https://en.wikipedia.org/wiki/javascript).
 
 [Back to the top](#table-of-contents)
 
