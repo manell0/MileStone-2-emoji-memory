@@ -283,7 +283,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 - A tutorial how to flip a image
   [rotate card](https://www.youtube.com/watch?v=0iAlXko9xJk)
 
-- I have learn lots of this good tutorial that i have used in my project
+- I have learned a lot from Marina Ferreira and this is a good guide that I have taken inspiration from in my project
   [flex-box](https://marina-ferreira.github.io/tutorials/css/flexbox/#introduction)
 
 - IIFE (Immediately Invoked Function Expression) that i use for my shuffle function
