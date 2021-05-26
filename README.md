@@ -21,8 +21,6 @@ This is a simple website where you can play the classic game of memory.
 4. [Issues and Bugs](#Issues-and-Bugs)
 5. [Technologies Used](#Technologies-Used)
    1. [Main Languages Used](#Main-Languages-Used)
-   2. [Additional Languages Used](#Additional-Languages-Used)
-   3. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 6. [Testing](#Testing)
    - [Go to the Testing file](testing.md)
 7. [Deployment](#Deployment)
