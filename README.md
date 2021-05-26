@@ -2,7 +2,7 @@
 
 Here comes the Markup
 
-<!-- ![The Markup from responsive design](assets/images/Responsivedesign-Screenshot.jpg) -->
+<!-- ![The Markup from responsive design](assets/stuff/markup.jpg) -->
 
 ## Milestone project 2 (Code Institute)
 
