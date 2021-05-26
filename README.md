@@ -15,7 +15,7 @@ This is a simple website where you can play the classic game of memory.
    3. [Development Planes](#Development-Planes)
    4. [Design](#Design)
 3. [Features](#Features)
-   1. [Design Features](#[Design-Features)
+   1. [Design Features](#Design-Features)
    2. [Existing Features](#Existing-Features)
    3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
 4. [Issues and Bugs](#Issues-and-Bugs)
