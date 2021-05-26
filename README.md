@@ -212,6 +212,8 @@ The home and game page have the same structure in terms of appearance, location 
 
 - [EasyTimer.js](https://albert-gonzalez.github.io/easytimer.js/)
 
+- [Font Awesome icons](https://fontawesome.com/icons?d=gallery&p=2&m=free)
+
 [Back to the top](#table-of-contents)
 
 # Testing
