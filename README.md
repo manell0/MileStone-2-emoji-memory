@@ -296,6 +296,11 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 
 - I use Easy timer in my projectas I learned on this page
   [EasyTimer.js](https://albert-gonzalez.github.io/easytimer.js/)
+  
+- I have looked and taken inspiration from these pages that I got recommended from my mentor:
+   - [Memory game from Josefine Kihlstrom](https://josefinekihlstrom.github.io/Plant-Memory/)
+   - [Memory game from Yostina](https://yostina-dh.github.io/Ge-ez-Memory-Game/pages/game.html)
+   
 
 ## Content
 
