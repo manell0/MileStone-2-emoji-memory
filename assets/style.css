@@ -319,3 +319,19 @@ h3 {
 		height: 320px;
 	}
 }
+
+@media (orientation: landscape) {
+	.game-surface {
+		width: 75vh;
+		height: 75vh;
+	}
+	.margins {
+		padding-top: 1em;
+	}
+}
+
+@media (orientation: portrait) {
+	.container {
+		margin-top: 25%;
+	}
+}
