@@ -19,22 +19,16 @@ h3 {
 	padding-bottom: 0;
 }
 
-.margins {
-	padding: 1em;
-}
-
 /* Game result modal styling */
-
 #game-result {
 	border-bottom: #fefefe 2px solid;
 	padding: 100px;
 }
 
 /* Game surface styling */
-
 .game-surface {
-	width: 500px;
-	height: 500px;
+	width: 700px;
+	height: 700px;
 	padding: 5px;
 	border: solid 5px orangered;
 	border-radius: 15px;
@@ -44,7 +38,6 @@ h3 {
 }
 
 /* Image styling on index.html */
-
 .background-image {
 	width: calc(100% - 10px);
 	height: calc(100% - 10px);
@@ -55,7 +48,6 @@ h3 {
 }
 
 /* The game images styling (game.html) */
-
 .images {
 	width: calc(25% - 10px);
 	height: calc(25% - 10px);
@@ -91,23 +83,19 @@ h3 {
 }
 
 /* Transform the images if they match (are the same) in the game */
-
 .done {
 	border-radius: 15px;
 	border: solid 15px rgb(15, 95, 65);
 }
 
 /* Scores and time (top left) */
-
 #scores {
 	color: #fefefe;
 	text-align: left;
 }
 
-/* The Modal (background) */
-
+/* The Modal  */
 /*-----Modal (https://www.w3schools.com/howto/howto_css_modals.asp) -----*/
-
 .modal {
 	display: none;
 	/* Hidden by default */
@@ -130,7 +118,6 @@ h3 {
 }
 
 /* Modal Content/Box */
-
 .modal-content {
 	background-color: hsla(14, 82%, 58%, 0.9);
 	color: whitesmoke;
@@ -147,7 +134,6 @@ h3 {
 }
 
 /* Buttons for Pause, Restart and Mute the sound in the game (game.html)*/
-
 #mute-sound,
 #restart,
 #pause-start {
@@ -168,7 +154,6 @@ h3 {
 }
 
 /* Close text styling in modal */
-
 .close {
 	color: rgb(255, 247, 247);
 	font-size: 28px;
@@ -183,7 +168,6 @@ h3 {
 }
 
 /*-------------------- close (X) in the top right corner */
-
 .close-to-main {
 	color: rgb(255, 255, 255);
 	margin-left: 3em;
@@ -192,7 +176,6 @@ h3 {
 }
 
 /*--------------------- Play again text in mordal*/
-
 .again {
 	color: antiquewhite;
 	font-size: 36px;
@@ -207,7 +190,6 @@ h3 {
 }
 
 /*--------------- Info and result text modal*/
-
 .info-text {
 	text-align: left;
 	border-bottom: lightgreen 2px solid;
@@ -216,7 +198,6 @@ h3 {
 }
 
 /* Info About The Game text styling (index.html) */
-
 .surface-text-top {
 	text-align: center;
 	cursor: pointer;
@@ -224,7 +205,6 @@ h3 {
 }
 
 /* Start The Memory Game text styling (index.html) */
-
 .surface-text {
 	text-align: center;
 	cursor: pointer;
@@ -239,8 +219,7 @@ h3 {
 }
 
 /*----------------------- Media Queries*/
-
-@media (max-width: 841px) {
+@media (max-width: 890px) {
 	.info-text {
 		font-size: 30px;
 		padding: 30px;
@@ -264,38 +243,69 @@ h3 {
 		font-size: 24px;
 	}
 	.game-surface {
-		width: 340px;
-		height: 340px;
+		width: 500px;
+		height: 500px;
 	}
 }
 
 @media (max-width: 641px) {
 	.info-text {
-		font-size: 18px;
+		font-size: 12px;
 		padding: 0;
 		margin: 0;
 	}
 	.again {
 		color: #0c5a3c;
 		padding-top: 20px;
-		font-size: 24px;
+		font-size: 12px;
 		font-weight: bold;
 	}
 	#game-result {
-		font-size: 24px;
+		font-size: 12px;
 		text-align: left;
-		padding: 20px;
+		padding: 2px;
 	}
 	#close {
-		font-size: 24px;
+		font-size: 12px;
 	}
 	.game-surface {
 		width: 340px;
 		height: 340px;
 	}
+	.surface-text,
+	.surface-text-top {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 481px) {
+	.margins {
+		padding-top: 0;
+	}
+	#pause-start,
+	#restart,
+	#mute-sound,
+	.close {
+		font-size: 10px;
+	}
+	.surface-text,
+	.surface-text-top {
+		font-size: 10px;
+	}
+	#game-result {
+		font-size: 12px;
+		text-align: left;
+		padding: 5px;
+	}
+	#scores {
+		font-size: 12px;
+	}
+	.container {
+		width: 95vh;
+	}
+}
+
+@media (max-width: 350px) {
 	.info-text {
 		font-size: 16px;
 		padding: 0;
@@ -303,23 +313,28 @@ h3 {
 	}
 	.again {
 		color: #0c5a3c;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: bold;
 	}
 	#game-result {
-		font-size: 18px;
+		font-size: 16px;
 		text-align: left;
 		padding: 10px;
 	}
 	#close {
 		font-size: 18px;
 	}
-	.game-surface {
-		width: 320px;
-		height: 320px;
+	#scores {
+		font-size: 18px;
+	}
+	.surface-text,
+	.surface-text-top {
+		margin-left: 3vh;
+	}
+	.container {
+		width: 95vh;
 	}
 }
-
 @media (orientation: landscape) {
 	.game-surface {
 		width: 75vh;
@@ -333,5 +348,10 @@ h3 {
 @media (orientation: portrait) {
 	.container {
 		margin-top: 25%;
+	}
+	.modal-content {
+		height: 70%;
+		padding-top: 10%;
+		text-align: center;
 	}
 }
