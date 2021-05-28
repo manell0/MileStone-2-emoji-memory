@@ -152,6 +152,10 @@ h3 {
 #pause-start:active {
 	color: #0c5a3c;
 }
+/* If icon on game.html (start / pause, restart or mute) are pressed */
+.color-red {
+	color: red;
+}
 
 /* Close text styling in modal */
 .close {
@@ -178,7 +182,7 @@ h3 {
 /*--------------------- Play again text in mordal*/
 .again {
 	color: antiquewhite;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
@@ -189,15 +193,16 @@ h3 {
 	cursor: pointer;
 }
 
-/*--------------- Info and result text modal*/
+/*--------------- Info and result text in modal*/
 .info-text {
+	font-size: 30px;
 	text-align: left;
 	border-bottom: lightgreen 2px solid;
 	margin-bottom: 50px;
 	padding: 30px;
 }
 
-/* Info About The Game text styling (index.html) */
+/* H3 The headings, Info About The Game text styling (index.html) */
 .surface-text-top {
 	text-align: center;
 	cursor: pointer;
@@ -221,14 +226,13 @@ h3 {
 /*----------------------- Media Queries*/
 @media (max-width: 890px) {
 	.info-text {
-		font-size: 30px;
-		padding: 30px;
+		font-size: 24px;
+		padding: 24px;
 		margin: 0;
 	}
 	.again {
-		color: #0c5a3c;
 		padding-top: 20px;
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: bold;
 	}
 	.color-result {
@@ -250,18 +254,17 @@ h3 {
 
 @media (max-width: 641px) {
 	.info-text {
-		font-size: 12px;
+		font-size: 14px;
 		padding: 0;
 		margin: 0;
 	}
 	.again {
-		color: #0c5a3c;
 		padding-top: 20px;
-		font-size: 12px;
+		font-size: 14px;
 		font-weight: bold;
 	}
 	#game-result {
-		font-size: 12px;
+		font-size: 14px;
 		text-align: left;
 		padding: 2px;
 	}
@@ -312,7 +315,6 @@ h3 {
 		margin: 0;
 	}
 	.again {
-		color: #0c5a3c;
 		font-size: 16px;
 		font-weight: bold;
 	}
