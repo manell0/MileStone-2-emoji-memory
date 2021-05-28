@@ -57,7 +57,7 @@ This is a simple website where you can play the classic game of memory.
 ### The ideal user of this website is
 
 - People who already like single games and patience games
-- People who want to develop their memory and in a fun way can kill some time.
+- People who want to develop their memory skills and in a fun way can kill some time.
 - Users who like single games in general
 
 ## User Stories
@@ -87,7 +87,7 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 ### Scope
 
-- The site is for board game people who want to improve in that genre.
+- The site is for single game people who want to improve in that genre.
 
 - Users who find this website are most certainly one who is looking for just and precisely for a Memory game.
 
@@ -190,7 +190,8 @@ The home and game page have the same structure in terms of appearance, location 
 
 - Problems getting my shuffle function to charge right from the start. Solution was to use [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
-<!-- - Hassle with margins distance and spacing has been a common occurrence when I built this site -->
+- Some problem to set up my Modals. Solution [modal exempel use](https://www.w3schools.com/howto/howto_css_modals.asp)
+
 
 # Technologies Used
 
@@ -294,6 +295,8 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 
 - I use Easy timer in my projectas I learned on this page
   [EasyTimer.js](https://albert-gonzalez.github.io/easytimer.js/)
+  
+- I use [Audio](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio)
   
 - I have looked and taken inspiration from these pages that I got recommended from my mentor:
    - [Memory game from Josefine Kihlstrom](https://josefinekihlstrom.github.io/Plant-Memory/)
