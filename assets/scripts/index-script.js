@@ -1,3 +1,4 @@
+// ------------ JS file for info modal in index.html
 var modal = document.getElementById('myModal');
 
 function infoFunction() {

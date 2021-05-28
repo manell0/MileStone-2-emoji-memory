@@ -25,7 +25,7 @@ muteSound.onclick = function () {
 		wrongSound.muted = true;
 		rightSound.muted = true;
 		finishSound.muted = true;
-		muteSound.innerHTML = ' <i class="fas fa-volume-mute"  title="Mute Off"></i> ';
+		muteSound.innerHTML = ' <i class="fas fa-volume-mute color-red"  title="Mute Off"></i> ';
 		mute = false;
 	} else {
 		klickSound.muted = false;
@@ -36,8 +36,12 @@ muteSound.onclick = function () {
 		mute = true;
 	}
 };
+
+// --------------------------------------- Restart icon / button
 restart.onclick = function () {
-	location.reload();
+	if (confirm('Are you sure that you want to restart the game, press OK?')) {
+		location.reload();
+	}
 };
 
 // ---------------------------------------- Time
@@ -57,12 +61,12 @@ pauseStart.onclick = function () {
 		timer.pause();
 		lockSurface = true;
 		onOff = false;
-		pauseStart.innerHTML = ' <i class="fas fa-play" title="Start the game"></i>  ';
+		pauseStart.innerHTML = ' <i class="fas fa-pause color-red" title="Start the game"></i>  ';
 	} else {
 		timer.start();
 		lockSurface = false;
 		onOff = true;
-		pauseStart.innerHTML = ' <i class="fas fa-pause"></i> ';
+		pauseStart.innerHTML = ' <i class="fas fa-play" title="Pause the game"></i> ';
 	}
 	console.log('pauseStart clicked');
 };
@@ -175,7 +179,7 @@ function Modal() {
 	timer.stop();
 }
 
-// Clicks on <span> (x), close the modal
+// Clicks on <span> (x on the right), close the modal
 closeModal.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'index.html';
@@ -186,7 +190,7 @@ closeMain.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'index.html';
 };
-// Play again text
+// Play again text function
 again.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'game.html';
@@ -199,4 +203,5 @@ window.onclick = function (event) {
 		location.href = 'index.html';
 	}
 };
+//---------- Start the time in the game
 timer.start({ precision: 'secondTenths' });
