@@ -111,9 +111,11 @@ function checkIfSame() {
 		dontSpinImg();
 	}
 	if (finished === 8) {
-		document.getElementById('scores').remove();
-		// --------------- Delay the finish bobble sound and the Modal for better UX
+		
+		// Delay the scores.remove function otherwise there will be a null value and an error message in the console 
+		//and also delay the finish bobble sound and the Modal for better UX
 		setTimeout(function () {
+			document.getElementById('scores').remove();
 			finishSound.play();
 			Modal();
 		}, 200);
