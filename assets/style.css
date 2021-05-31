@@ -22,7 +22,7 @@ h3 {
 /* Game result modal styling */
 #game-result {
 	border-bottom: #fefefe 2px solid;
-	padding: 100px;
+	padding: 75px;
 }
 
 /* Game surface styling */
@@ -344,6 +344,11 @@ h3 {
 	}
 	.margins {
 		padding-top: 1em;
+	}
+	.modal-content {
+		height: 80%;
+		padding-top: 0;
+		text-align: center;
 	}
 }
 
