@@ -11,7 +11,11 @@ function startGame() {
 const closeModal = document.getElementsByClassName('close')[0];
 const closeMain = document.getElementById('close');
 const again = document.getElementsByClassName('again')[0];
-document.getElementById('record-info-text').innerHTML = `💥${localStorage.getItem('theFinalRecord')}💥`;
+if (localStorage.length === 0) {
+	document.getElementById('record-info-text').innerHTML = `💥Here comes your HighScore💥`;
+} else {
+	document.getElementById('record-info-text').innerHTML = `💥${localStorage.getItem('theFinalRecord')}💥`;
+}
 
 // Text link, open the modal
 function Modal() {
