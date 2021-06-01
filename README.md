@@ -81,9 +81,9 @@ This is a simple website where you can play the classic game of memory.
 
 With these goals in mind, a strategy table was created to determine the trade-off between importance and viability with the following results:
 
-**_[Link to Strategy Trade-off as PDF](assets/stuff/strategy-trade-off.pdf)_**
+**_[Link to Strategy Trade-off as PDF](assets/readme-resources/strategy-trade-off.pdf)_**
 
-![Spreadsheet Strategy](assets/stuff/strategy-trade-off.jpg)
+![Spreadsheet Strategy](assets/readme-resources/strategy-trade-off.jpg)
 
 ### Scope
 
@@ -108,15 +108,15 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 The information architecture was organized in a hierarchical tree structure in order to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
-![Hierarchical tree structure](assets/stuff/Structure.jpg)
+![Hierarchical tree structure](assets/readme-resources/Structure.jpg)
 
 ### Skeleton
 
 Wireframe mockup were created in a Figma Workspace with providing a positive user experience in mind:
 
-**_[Link to Figma Wireframes as PDF](assets/stuff/Figma.pdf)_**
+**_[Link to Figma Wireframes as PDF](assets/readme-resources/Figma.pdf)_**
 
-![Wireframes screenShot as PDF](assets/stuff/Wireframe.jpg)
+![Wireframes screenShot as PDF](assets/readme-resources/Wireframe.jpg)
 [Back to the top](#table-of-contents)
 
 ### Surface
