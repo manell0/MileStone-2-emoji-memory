@@ -182,7 +182,7 @@ function Modal() {
 			'secondTenths',
 		])}</b> Seconds!<br><b style="font-size:16px; color: rgb(0, 0, 0)"> 💥${theBestResult}💥`;
 
-	console.log(theBestResult);
+	localStorage.clear()
 	timer.stop();
 }
 
