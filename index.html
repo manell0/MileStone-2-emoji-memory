@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Memory game with emojis to be solved in as few clicks as possible." />
-		<link rel="icon" href="assets/images/code-institue-background-emoji-text.png " type="image/icontype" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="assets/style.css" />
-		<title>A Game Of Emoji Memory</title>
-	</head>
-	<body>
-		<!-- The page container -->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm">
-					<h3 class="surface-text-top" onclick="infoFunction()">Info About The Game</h3>
-					<div class="game-surface">
-						<div class="background-image">
-							<img
-								class="img-neck info-text"
-								onclick="infoFunction()"
-								src="assets/images/code-institue-background-emoji-text.png"
-								alt="Code Instetute logo"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-			<h3 class="surface-text" onclick="startGame()">Start Memory Game</h3>
-		</div>
-		<!-- The Modal Area for information about the game -->
-		<div id="myModal" class="modal">
-			<!-- Modal content -->
-			<div class="modal-content">
-				<div class="info-text">
-					<p>This emoji memory game should be solved with as few clicks as possible and in as short a time as possible.</p>
-					<p>Just click on the Code Institute pictures and see what happens ... You will understand!</p>
-				</div>
-				<span id="record-info-text">Your Record</span>
-				<!-- Play again -->
-				<span class="again">Start The Memory Game</span>
-				<span class="close" id="close">Back To Main</span>
-			</div>
-		</div>
-		<script src="assets/scripts/index-script.js"></script>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Memory game with emojis to be solved in as few clicks as possible." />
+        <link rel="icon" href="assets/images/code-institue-background-emoji-text.png " type="image/icontype" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="assets/style.css" />
+        <title>A Game Of Emoji Memory</title>
+    </head>
+    <body>
+        <!-- The page container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3 class="surface-text-top" onclick="infoFunction()">Info About The Game</h3>
+                    <div class="game-surface">
+                        <div class="background-image">
+                            <img
+                                class="img-neck info-text"
+                                onclick="infoFunction()"
+                                src="assets/images/code-institue-background-emoji-text.png"
+                                alt="Code Instetute logo"
+                                />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="surface-text" onclick="startGame()">Start Memory Game</h3>
+        </div>
+        <!-- The Modal Area for information about the game -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="info-text">
+                    <p>This emoji memory game should be solved with as few clicks as possible and in as short a time as possible.</p>
+                    <p>Just click on the Code Institute pictures and see what happens ... You will understand!</p>
+                </div>
+                <span id="record-info-text">Your Record</span>
+                <!-- Play again -->
+                <span class="again">Start The Memory Game</span>
+                <span class="close" id="close">Back To Main</span>
+            </div>
+        </div>
+        <script src="assets/scripts/index-script.js"></script>
+    </body>
 </html>
