@@ -123,7 +123,7 @@ Wireframe mockup were created in a Figma Workspace with providing a positive use
 
 [Markup from: ami.responsive design.is](http://ami.responsivedesign.is/?url=https%3A%2F%2Fmanell0.github.io%2FMileStone-2-emoji-memory%2Fgame.html#)
 
-![The Markup from responsive design](assets/stuff/markup.jpg)
+![The Markup from responsive design](assets/readme-resources/markup.jpg)
 
 ## Design
 
