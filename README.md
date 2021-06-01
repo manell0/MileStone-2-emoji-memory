@@ -1,6 +1,6 @@
 # Memory, The Classic Single Game
 
-![The Markup from responsive design](assets/stuff/markup.jpg)
+![The Markup from responsive design](assets/readme-resources/markup.jpg)
 
 ## Milestone project 2 (Code Institute)
 
