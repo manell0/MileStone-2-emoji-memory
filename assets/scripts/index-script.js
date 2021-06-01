@@ -1,5 +1,5 @@
 // ------------ JS file for info modal in index.html
-var modal = document.getElementById('myModal');
+let modal = document.getElementById('myModal');
 
 function infoFunction() {
 	Modal();
@@ -8,9 +8,10 @@ function startGame() {
 	location.href = 'game.html';
 }
 
-var closeModal = document.getElementsByClassName('close')[0];
-var closeMain = document.getElementById('close');
-var again = document.getElementsByClassName('again')[0];
+const closeModal = document.getElementsByClassName('close')[0];
+const closeMain = document.getElementById('close');
+const again = document.getElementsByClassName('again')[0];
+document.getElementById('record-info-text').innerHTML = `💥${localStorage.getItem('theFinalRecord')}💥`;
 
 // Text link, open the modal
 function Modal() {
