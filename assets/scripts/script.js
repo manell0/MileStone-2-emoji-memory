@@ -170,16 +170,71 @@ let again = document.getElementsByClassName('again')[0];
 // When the user finish the game, open the modal whit the result
 function Modal() {
 	modal.style.display = 'block';
+	let theBestResult = bestResult(clicks, timer);
 	document.getElementById(
 		'game-result'
-	).innerHTML = `You solved the memory in <b style="color: rgb(0, 255, 0)";>${clicks}</b> clicks with time <b style="color: rgb(0, 255, 0)";>${timer
+	).innerHTML = `You solved this memory in <b style="color: rgb(0, 255, 0)";>${clicks}</b> clicks with time <b style="color: rgb(0, 255, 0)";>${timer
 		.getTimeValues()
 		.toString(['minutes'])}</b> Minutes and <b style="color: rgb(0, 255, 0)";>${timer
 		.getTimeValues()
-		.toString(['seconds', 'secondTenths'])}</b> Seconds!`;
+		.toString([
+			'seconds',
+			'secondTenths',
+		])}</b> Seconds!<br><b style="font-size:16px; color: rgb(0, 0, 0)"> 💥${theBestResult}💥`;
 
+	console.log(theBestResult);
 	timer.stop();
 }
+
+//--------------------------------- Save the best restult ----------------
+function bestResult(clicks, timer) {
+	// Turn all variables into strings as Window.localStorage only takes strings
+	let clicksStr = clicks.toString();
+	let timeMinStr = timer.getTimeValues().toString(['minutes']);
+	let timeSekStr = timer.getTimeValues().toString(['seconds']);
+	let timeTenthsStr = timer.getTimeValues().toString(['secondTenths']);
+	//let bestResultStrSaved = `Your best result: <br> ${clicksStr} clicks, in ${timeMinStr} minutes and ${timeSekStr} seconds`;
+	//--------------------------------------------------------
+	//Make the time variables into number so i can use them to compare
+	timeMinNum = parseInt(timeMinStr, 10);
+	timeSekNum = parseInt(timeSekStr, 10);
+	timeTenthsNum = parseInt(timeTenthsStr, 10);
+
+	// First check if Web Storage support..
+	if (typeof Storage !== 'undefined') {
+		// Code for localStorage/sessionStorage.
+		if (localStorage.length === 0) {
+			tempData = clicksStr + timeMinStr + timeSekStr + timeTenthsStr;
+			localStorage.setItem('myRecord', tempData);
+			localStorage.setItem(
+				'theFinalRecord',
+				`HighScore: ${clicksStr} Clicks, Time: ${timeMinStr} Minutes ${timeSekStr} Seconds and ${timeTenthsStr} Tenths`
+			);
+			return localStorage.getItem('theFinalRecord');
+		} else {
+			tempData = localStorage.getItem('myRecord');
+			tempData = parseInt(tempData, 10);
+			myRecord = clicksStr + timeMinStr + timeSekStr + timeTenthsStr;
+			myRecord = parseInt(myRecord, 10);
+			if (myRecord < tempData) {
+				tempData = clicksStr + timeMinStr + timeSekStr + timeTenthsStr;
+				localStorage.setItem('myRecord', tempData);
+				localStorage.setItem(
+					'theFinalRecord',
+					`HighScore: ${clicksStr} Clicks, Time: ${timeMinStr} Minutes ${timeSekStr} Seconds and ${timeTenthsStr} Tenths`
+				);
+				return localStorage.getItem('theFinalRecord');
+			} else {
+				return localStorage.getItem('theFinalRecord');
+			}
+		}
+	} else {
+		// Sorry! No Web Storage support..
+		console.log('Sorry! No Web Storage support');
+		return 'Sorry! No Web Storage support';
+	}
+}
+//-------------------------------------------------
 
 // Clicks on <span> (x on the right), close the modal
 closeModal.onclick = function () {
