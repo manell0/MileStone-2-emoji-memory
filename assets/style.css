@@ -1,364 +1,412 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit:ital,wght@0,400;0,700;1,400&display=swap');
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-	height: 100vh;
-	display: flex;
-	background: rgb(12, 90, 60);
-	font-family: 'Architects Daughter', sans-serif;
+    height: 100vh;
+    display: flex;
+    background: rgb(12, 90, 60);
+    font-family: 'Architects Daughter', sans-serif;
 }
 
 h3 {
-	text-align: center;
-	color: #fff;
-	padding-top: 1%;
-	padding-bottom: 0;
+    text-align: center;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 0;
 }
+
 
 /* Game result modal styling */
+
 #game-result {
-	border-bottom: #fefefe 2px solid;
-	padding: 75px;
+    border-bottom: #fefefe 2px solid;
+    padding: 3em;
 }
+
 
 /* Game surface styling */
+
 .game-surface {
-	width: 700px;
-	height: 700px;
-	padding: 5px;
-	border: solid 5px orangered;
-	border-radius: 15px;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
+    width: 700px;
+    height: 700px;
+    padding: 5px;
+    border: solid 5px orangered;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 /* Image styling on index.html */
+
 .background-image {
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
-	margin: 5px;
-	position: relative;
-	transform: scale(1);
-	transform-style: preserve-3d;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
 }
 
+
 /* The game images styling (game.html) */
+
 .images {
-	width: calc(25% - 10px);
-	height: calc(25% - 10px);
-	margin: 5px;
-	position: relative;
-	transform: scale(1);
-	transform-style: preserve-3d;
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
 }
 
 .images:hover {
-	transform: scale(0.95);
-	transition: transform 0.2s;
+    transform: scale(0.95);
+    transition: transform 0.2s;
 }
 
 .images.spin {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .img-face,
 .img-neck {
-	width: 100%;
-	height: 100%;
-	padding: 10%;
-	position: absolute;
-	border-radius: 10px;
-	background: rgb(248, 244, 244);
-	backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    position: absolute;
+    border-radius: 10px;
+    background: rgb(248, 244, 244);
+    backface-visibility: hidden;
 }
 
 .img-face {
-	transform: rotateY(180deg);
-	background-color: whitesmoke;
+    transform: rotateY(180deg);
+    background-color: whitesmoke;
 }
+
 
 /* Transform the images if they match (are the same) in the game */
+
 .done {
-	border-radius: 15px;
-	border: solid 15px rgb(15, 95, 65);
+    border-radius: 15px;
+    border: solid 15px rgb(15, 95, 65);
 }
 
-/* Scores and time (top left) */
+
+/* Scores and time (top left) in game.html */
+
 #scores {
-	color: #fefefe;
-	text-align: left;
+    color: #fefefe;
+    text-align: left;
 }
+
 
 /* The Modal  */
+
+
 /*-----Modal (https://www.w3schools.com/howto/howto_css_modals.asp) -----*/
+
 .modal {
-	display: none;
-	/* Hidden by default */
-	position: fixed;
-	/* Stay in place */
-	z-index: 1;
-	/* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%;
-	/* Full width */
-	height: 100%;
-	/* Full height */
-	overflow: auto;
-	/* Enable scroll if needed */
-	background-color: rgb(0, 0, 0);
-	/* Fallback color */
-	background-color: rgba(56, 26, 26, 0.5);
-	/* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(56, 26, 26, 0.5);
+    /* Black w/ opacity */
 }
+
 
 /* Modal Content/Box */
+
 .modal-content {
-	background-color: hsla(14, 82%, 58%, 0.9);
-	color: whitesmoke;
-	margin: 10% auto;
-	/* 10% from the top and centered */
-	padding: 20px;
-	border: lightgreen solid 2px;
-	border-radius: 3%;
-	width: 80%;
-	/* Could be more or less, depending on screen size */
-	height: 80%;
-	font-size: 36px;
-	text-align: center;
+    background-color: hsla(14, 82%, 58%, 0.9);
+    color: whitesmoke;
+    margin: 10% auto;
+    /* 10% from the top and centered */
+    padding: 20px;
+    border: lightgreen solid 2px;
+    border-radius: 3%;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    height: 80%;
+    font-size: 36px;
+    text-align: center;
 }
 
+
 /* Buttons for Pause, Restart and Mute the sound in the game (game.html)*/
+
 #mute-sound,
 #restart,
 #pause-start {
-	color: rgb(0, 255, 0);
-	font-size: 24px;
-	padding: 0 0.2em 0 0.2em;
+    color: rgb(0, 255, 0);
+    font-size: 24px;
+    padding: 0 0.2em 0 0.2em;
 }
 
 #mute-sound:hover,
 #restart:hover,
 #pause-start:hover {
-	cursor: pointer;
-	color: orangered;
+    cursor: pointer;
+    color: orangered;
 }
 
 #pause-start:active {
-	color: #0c5a3c;
-}
-/* If icon on game.html (start / pause, restart or mute) are pressed */
-.color-red {
-	color: red;
+    color: #0c5a3c;
 }
 
+
+/* If icon on game.html (start / pause, restart or mute) are pressed */
+
+.color-red {
+    color: red;
+}
+
+
 /* Close text styling in modal */
+
 .close {
-	color: rgb(255, 247, 247);
-	font-size: 28px;
-	font-weight: bold;
+    color: rgb(255, 247, 247);
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-	color: green;
-	text-decoration: none;
-	cursor: pointer;
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 
 /*-------------------- close (X) in the top right corner */
+
 .close-to-main {
-	color: rgb(255, 255, 255);
-	margin-left: 3em;
-	text-align: right;
-	padding: 5px 5px 0 0;
+    color: rgb(255, 255, 255);
+    margin-left: 3em;
+    text-align: right;
+    padding: 5px 5px 0 0;
 }
 
+
 /*--------------------- Play again text in mordal*/
+
 .again {
-	color: antiquewhite;
-	font-size: 30px;
-	font-weight: bold;
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .again:hover,
 .again:focus {
-	color: green;
-	text-decoration: none;
-	cursor: pointer;
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 
 /*--------------- Info and result text in modal*/
+
 .info-text {
-	font-size: 30px;
-	text-align: left;
-	border-bottom: lightgreen 2px solid;
-	margin-bottom: 50px;
-	padding: 30px;
+    font-size: 30px;
+    text-align: left;
+    border-bottom: lightgreen 2px solid;
+    margin-bottom: 50px;
+    padding: 30px;
 }
+
 
 /* H3 The headings, Info About The Game text styling (index.html) */
+
 .surface-text-top {
-	text-align: center;
-	cursor: pointer;
-	padding-top: 5%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5%;
 }
 
+
 /* Start The Memory Game text styling (index.html) */
+
 .surface-text {
-	text-align: center;
-	cursor: pointer;
+    text-align: center;
+    cursor: pointer;
 }
 
 .surface-text:hover {
-	color: orangered;
+    color: orangered;
 }
 
 .surface-text-top:hover {
-	color: orangered;
+    color: orangered;
 }
 
+
 /*----------------------- Media Queries*/
+
 @media (max-width: 890px) {
-	.info-text {
-		font-size: 24px;
-		padding: 24px;
-		margin: 0;
-	}
-	.again {
-		padding-top: 20px;
-		font-size: 24px;
-		font-weight: bold;
-	}
-	.color-result {
-		color: #5a0c0c;
-	}
-	#game-result {
-		font-size: 24px;
-		text-align: left;
-		padding: 20px;
-	}
-	#close {
-		font-size: 24px;
-	}
-	.game-surface {
-		width: 500px;
-		height: 500px;
-	}
+    .info-text {
+        font-size: 24px;
+        padding: 24px;
+        margin: 0;
+    }
+    .again {
+        padding-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .color-result {
+        color: #5a0c0c;
+    }
+    #game-result {
+        font-size: 14px;
+        text-align: left;
+        padding: 2em;
+    }
+    #close {
+        font-size: 24px;
+    }
+    .game-surface {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 642px) {
+    #game-result {
+        padding: 1em;
+    }
 }
 
 @media (max-width: 641px) {
-	.info-text {
-		font-size: 14px;
-		padding: 0;
-		margin: 0;
-	}
-	.again {
-		padding-top: 20px;
-		font-size: 14px;
-		font-weight: bold;
-	}
-	#game-result {
-		font-size: 14px;
-		text-align: left;
-		padding: 2px;
-	}
-	#close {
-		font-size: 12px;
-	}
-	.game-surface {
-		width: 340px;
-		height: 340px;
-	}
-	.surface-text,
-	.surface-text-top {
-		font-size: 12px;
-	}
+    .info-text {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    .again {
+        padding-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #game-result {
+        font-size: 14px;
+        text-align: left;
+        padding: 2em;
+    }
+    #close {
+        font-size: 18px;
+    }
+    .game-surface {
+        width: 340px;
+        height: 340px;
+    }
+    .surface-text,
+    .surface-text-top {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 481px) {
-	.margins {
-		padding-top: 0;
-	}
-	#pause-start,
-	#restart,
-	#mute-sound,
-	.close {
-		font-size: 10px;
-	}
-	.surface-text,
-	.surface-text-top {
-		font-size: 10px;
-	}
-	#game-result {
-		font-size: 12px;
-		text-align: left;
-		padding: 5px;
-	}
-	#scores {
-		font-size: 12px;
-	}
-	.container {
-		width: 95vh;
-	}
+    .margins {
+        font-size: 16px;
+        padding-top: 0;
+    }
+    #pause-start,
+    #restart,
+    #mute-sound,
+    .close {
+        font-size: 30px;
+    }
+    .surface-text,
+    .surface-text-top {
+        font-size: 16px;
+    }
+    #game-result {
+        font-size: 14px;
+        text-align: left;
+        padding: 5px;
+    }
+    #scores {
+        font-size: 16px;
+    }
+    .container {
+        width: 95vh;
+    }
 }
 
 @media (max-width: 350px) {
-	.info-text {
-		font-size: 16px;
-		padding: 0;
-		margin: 0;
-	}
-	.again {
-		font-size: 16px;
-		font-weight: bold;
-	}
-	#game-result {
-		font-size: 16px;
-		text-align: left;
-		padding: 10px;
-	}
-	#close {
-		font-size: 18px;
-	}
-	#scores {
-		font-size: 18px;
-	}
-	.surface-text,
-	.surface-text-top {
-		margin-left: 3vh;
-	}
-	.container {
-		width: 95vh;
-	}
+    .info-text {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+    .again {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #game-result {
+        font-size: 16px;
+        text-align: left;
+        padding: 1em;
+    }
+    #close {
+        font-size: 18px;
+    }
+    #scores {
+        font-size: 18px;
+    }
+    .surface-text,
+    .surface-text-top {
+        margin-left: 3vh;
+    }
+    .container {
+        width: 95vh;
+    }
 }
+
 @media (orientation: landscape) {
-	.game-surface {
-		width: 75vh;
-		height: 75vh;
-	}
-	.margins {
-		padding-top: 1em;
-	}
-	.modal-content {
-		height: 80%;
-		padding-top: 0;
-		text-align: center;
-	}
+    .game-surface {
+        width: 75vh;
+        height: 75vh;
+    }
+    .margins {
+        padding-top: 1em;
+    }
+    .modal-content {
+        height: 80%;
+        padding-top: 0;
+        text-align: center;
+    }
 }
 
 @media (orientation: portrait) {
-	.container {
-		margin-top: 25%;
-	}
-	.modal-content {
-		height: 60%;
-		padding-top: 10%;
-		text-align: center;
-	}
+    .container {
+        margin-top: 25%;
+    }
+    .modal-content {
+        height: 60%;
+        padding-top: 10%;
+        text-align: center;
+    }
+    #game-result {
+        padding: 1em;
+    }
 }
