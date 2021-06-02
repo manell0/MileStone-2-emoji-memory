@@ -56,9 +56,10 @@ This is a simple website where you can play the classic game of memory.
 
 ### The ideal user of this website is
 
-- People who already like single games and patience games
+- People who already like single games and patience games.
 - People who want to develop their memory skills and in a fun way can kill some time.
-- Users who like single games in general
+- Users who like single games in general.
+- People who in a simple way want to spend some time in a developing and fun way.
 
 ## User Stories
 
@@ -68,9 +69,21 @@ This is a simple website where you can play the classic game of memory.
 
 2. As a new user, I want to be able to find out how the game should be played and what it is about.
 
+3. As a new user, I want to be able to see my best result. How many clicks and what time.
+
+4. As a new user, I want to be able to pause the game.
+
+5. As a new user, I want to be able to restart the game.
+
+6. As a new user, I want to be able to mute the sound in the game.
+
+7. As a new user, I want to be able to close the game and get directly to the front page.
+
 ### Current Fans Goals:
 
 1. As a current user, I want to navigate to the game as easily and quickly as possible.
+
+2. As a current user, I want to be able to see my high score in a simple way.
 
 ## Development Planes
 
@@ -131,6 +144,8 @@ Wireframe mockup were created in a Figma Workspace with providing a positive use
 
 The main colors used throughout the website are a mixture of dark green, White and orange.
 
+Also has black text so that there will be a distinct difference, and it will be visible well.
+
 The chosen color scheme are chosen to get a clear and nice view to integrate with.
 
 - I Find the color combination on site [COLORS](https://coolors.co/)
@@ -146,7 +161,7 @@ Font font-family: Architects Daughter is used throughout the website with Sans S
 The selected image on the home page is modern and simple, reflecting the look and feel of the page and the game.
 The image is captivating and visually represents the site's theme.
 
-The image on index.html is a combination of Code Institute and an emoji.
+The image on index.html is a combination of Code Institute and an happy emoji.
 
 In the game itself, on the back Code Institute logo and on the front are used various emojis that I found under free emojis on google.com.
 
@@ -169,20 +184,16 @@ The home and game page have the same structure in terms of appearance, location 
 - Start Page with link to info and the game with a fancy image
 - Game Page with the game surface
 
-<!--#### Social Icons
-
-- Social Icons - The icons appear on each page and are appropriate representations of the social media platforms.
-  - [Facebook](https://www.facebook.com/)
-  - [YouTube](https://www.youtube.com/)
-  - [LinkedIn](https://www.linkedin.com/) -->
-
 ## Features to Implement in the future
 
-- [ ] Make sure that the best result of a game can be saved in a separate file.
-  <!-- **Done. Finished and ready!** -->
+- [x] Make sure that the best result of a game can be saved in a separate file.
 
-  - #### Reason for not featuring in this release
-    - Time and skill...
+        High Score are done, finished and ready!
+
+Corrected with https://www.corrector.co/
+
+- #### Reason for not featuring in this release
+  - ~~Time and skill...~~
 
 [Back to the top](#table-of-contents)
 
@@ -192,6 +203,7 @@ The home and game page have the same structure in terms of appearance, location 
 
 - Some problem to set up my Modals. Solution [modal exempel use](https://www.w3schools.com/howto/howto_css_modals.asp)
 
+- Problems getting 404.html working no matter where it goes wrong. 404.html works (https://manell0.github.io/MileStone-2-emoji-memory/adsfadfadfadfadfadf) but not if I do slash (/) after the whole URL (https://manell0.github.io/MileStone- 2-emoji-memory / index.html /).Tried to add .htaccess file with the content (ErrorDocument 404 https://manell0.github.io/MileStone-2-emoji-memory/index.html/404.html) but it does not work ?! Tried to put 404.html in all directories, but it does not work ?! Unfortunately I have not found a solution to this problem, so maybe I have a bug ?.
 
 # Technologies Used
 
@@ -295,13 +307,10 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 
 - I use Easy timer in my projectas I learned on this page
   [EasyTimer.js](https://albert-gonzalez.github.io/easytimer.js/)
-  
 - I use [Audio](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio)
-  
 - I have looked and taken inspiration from these pages that I got recommended from my mentor:
-   - [Memory game from Josefine Kihlstrom](https://josefinekihlstrom.github.io/Plant-Memory/)
-   - [Memory game from Yostina](https://yostina-dh.github.io/Ge-ez-Memory-Game/pages/game.html)
-   
+  - [Memory game from Josefine Kihlstrom](https://josefinekihlstrom.github.io/Plant-Memory/)
+  - [Memory game from Yostina](https://yostina-dh.github.io/Ge-ez-Memory-Game/pages/game.html)
 
 ## Content
 
