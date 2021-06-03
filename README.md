@@ -177,20 +177,43 @@ Each page on the website has a consistent responsive navigation system through s
 
 #### Home Page and the Game Page
 
-The home and game page have the same structure in terms of appearance, location and links.
+The home and game page have the same structure in terms of appearance.
 
 ### Existing Features
 
-- Start Page with link to info and the game with a fancy image
-- Game Page with the game surface
+#### The website consists of two pages with associated Modal for both pages (index.html and game.html).
+
+- ### Start Page (index.html):
+  - Link on top of the start page to info **Info About The Game** (Modal).
+    - Here you can see information about the game. You can also see your best result (if you previously played in the same browser, using localStoraget o save values) as well as links to the game and back to the home page.
+  - At the top in the center of the page you have a fancy image / logo.
+    - The image is clickable and you get to the info page (Modal).
+    - Link at the bottom of the start page to the game **Start Memory Game**.
+    - Start the memory game immediately.
+- ### Game Page (game.html):
+  - At the top left is the timer clock with seconds and tenths.
+  - In the middle of the game page we find three icons / buttons:
+    - The first button is the pause / start button:
+      - Are used if you want to pause the game during the current game.
+    - The second button is the restart button:
+      - Are used to restart the game.
+    - The third button is the mute or unmute button:
+      - Are used to mute or unmute in the game.
+  - At the top right is an exit button that closes the game and redirects the user to the home page (index.html).
+  - In the middle of the page is the playing surface where the game itself is played
+
+The Modal that appears when you finish the game shows the round's number of clicks and the time it took to complete the game.
+Also, the record the user has (if there is a previous record).
+At the bottom of the Modal we find two links that goes to **Play Again** and **Back To Main**
+
+- ### 404 page (404.html):
+  - 404 looks similar to the start page with the difference that it is a shocked emoji as the center image instead of a happy emoji as it is on the start page. When you click on the image or text, you get to the start page.
 
 ## Features to Implement in the future
 
-- [x] Make sure that the best result of a game can be saved in a separate file.
+- [x] Make sure that the best result of a game can be saved and stored.
 
-        High Score are done, finished and ready!
-
-Corrected with https://www.corrector.co/
+**High Score are finish and ready!** 👍
 
 - #### Reason for not featuring in this release
   - ~~Time and skill...~~
@@ -199,11 +222,23 @@ Corrected with https://www.corrector.co/
 
 # Issues and Bugs
 
-- Problems getting my shuffle function to charge right from the start. Solution was to use [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+- Problems getting my shuffle function to charge right from the start.
 
-- Some problem to set up my Modals. Solution [modal exempel use](https://www.w3schools.com/howto/howto_css_modals.asp)
+  - Solution was to use [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
-- Problems getting 404.html working no matter where it goes wrong. 404.html works (https://manell0.github.io/MileStone-2-emoji-memory/adsfadfadfadfadfadf) but not if I do slash (/) after the whole URL (https://manell0.github.io/MileStone- 2-emoji-memory / index.html /).Tried to add .htaccess file with the content (ErrorDocument 404 https://manell0.github.io/MileStone-2-emoji-memory/index.html/404.html) but it does not work ?! Tried to put 404.html in all directories, but it does not work ?! Unfortunately I have not found a solution to this problem, so maybe I have a bug ?.
+- Some problem to set up my Modals.
+
+  - Solution [modal exempel use](https://www.w3schools.com/howto/howto_css_modals.asp)
+
+- Problems getting 404.html working no matter where it goes wrong. 404.html works (https://manell0.github.io/MileStone-2-emoji-memory/adsfadfadfadfadfadf) but not if I do slash (/) after the whole URL (https://manell0.github.io/MileStone- 2-emoji-memory / index.html /).Tried to add .htaccess file with the content (ErrorDocument 404 https://manell0.github.io/MileStone-2-emoji-memory/index.html/404.html) but it does not work ?! Tried to put 404.html in all directories, but it does not work ?!
+
+  - SOLUTION: I changed all relative file paths in 404.html to absolute file paths and that solved my problem. So now 404.html works as it should! 😀
+
+- Problems with my javascript code appearing with 8 spaces when looking in GitHub. Apparently can not be changed.
+
+  - Solution: You can append ?ts=2 or ?ts=4 to the URL to change the tab-size.
+
+- This was an issue [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) Of course, I would read this before I did this project!
 
 # Technologies Used
 
@@ -296,7 +331,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 - A tutorial how to flip a image
   [rotate card](https://www.youtube.com/watch?v=0iAlXko9xJk)
 
-- I have learned a lot from Marina Ferreira and this is a good guide that I have taken inspiration from in my project
+- I have learned a lot from **Marina Ferreira** and this is a good guide that I have taken inspiration from in my project
   [flex-box](https://marina-ferreira.github.io/tutorials/css/flexbox/#introduction)
 
 - IIFE (Immediately Invoked Function Expression) that i use for my shuffle function

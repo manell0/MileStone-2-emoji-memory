@@ -123,7 +123,7 @@ The Modal that is automatically displayed when you have completed a game works a
 
 - All pages on the site have the same result. See below.
 
-![HTML Validation](assets/readme-resources/html-validaor-image.jpg)
+![HTML Validation](assets/stuff/html-validaor-image.jpg)
 
 ### CSS Validation
 
@@ -132,14 +132,14 @@ The Modal that is automatically displayed when you have completed a game works a
 - It´s only one CSS file in the project (style.css)
   - (The test is done from Swedish browser, translated into English: Congratulations! No errors were found)
 
-![CSS Validation](assets/readme-resources/css-validaor-image.jpg)
+![CSS Validation](assets/stuff/css-validaor-image.jpg)
 
 ## Lighthouse
 
 Screenshot from index page (desktop device)
 
-[Lighthouse test as PDF ](assets/readme-resources/lighthouse.pdf)
-![lighthouse test](assets/readme-resources/lighthouse-index.jpg)
+[Lighthouse test as PDF ](assets/stuff/lighthouse.pdf)
+![lighthouse test](assets/stuff/lighthouse-index.jpg)
 
 ## User Testing
 
