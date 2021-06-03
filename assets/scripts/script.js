@@ -73,6 +73,8 @@ pauseStart.onclick = function () {
 
 // ---------------------Check if the image shuld turn
 function turnImage() {
+	if (onOff === false) {
+		alert('You paused the game when you pressed  the icon (▶) and had to press the icon (⏸) to start the game again!');
 	if (lockSurface) {
 		return;
 	}
