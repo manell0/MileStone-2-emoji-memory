@@ -218,6 +218,7 @@ h3 {
     text-align: right;
     padding: 5px 5px 0 0;
     text-shadow: 3px 3px 3px #011601;
+    font-size: 48px;
 }
 
 
@@ -301,6 +302,9 @@ h3 {
     #close {
         font-size: 24px;
     }
+    .close-to-main {
+		font-size: 30px;
+	}
     .game-surface {
         width: 500px;
         height: 500px;
@@ -332,6 +336,9 @@ h3 {
     #close {
         font-size: 18px;
     }
+    .close-to-main {
+		font-size: 24px;
+	}
     .game-surface {
         width: 340px;
         height: 340px;
