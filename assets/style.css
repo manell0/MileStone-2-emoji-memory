@@ -49,6 +49,7 @@ h3 {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    cursor: help;
 }
 
 
