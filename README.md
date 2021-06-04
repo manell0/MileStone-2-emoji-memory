@@ -7,7 +7,7 @@
 
 This is a simple website where you can play the classic game of memory.
 
-**[Check out the website here](https://manell0.github.io/MileStone-2-emoji-memory/index.html)**
+[Check out the website here](https://manell0.github.io/MileStone-2-emoji-memory/index.html)
 -------------------------
 ## Table of contents
 
