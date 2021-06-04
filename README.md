@@ -42,9 +42,9 @@ This is a simple website where you can play the classic game of memory.
 
 - The simplicity and small scale of the website is an important aspect to achieve an interest in bookmarking the return page.
 
-- If you like patience game you will like this Emoji Memory Game
+- If you like single-game you will like this Emoji Memory Game
 
-- This is the second of four Milestone projects that the developer must complete during his Full Stack web development program at The Code Institute.
+- This is the second of four Milestone projects that the developer must complete during his Full-Stack web development program at The Code Institute.
 
 - The most important requirements were to build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals. [**HTML5**](https://en.wikipedia.org/wiki/HTML5) and [**CSS3**](https://en.wikipedia.org/wiki/CSS) and [**JavaScript**](https://en.wikipedia.org/wiki/javascript).
 
@@ -59,7 +59,7 @@ This is a simple website where you can play the classic game of memory.
 - People who already like single games and patience games.
 - People who want to develop their memory skills and in a fun way can kill some time.
 - Users who like single games in general.
-- People who in a simple way want to spend some time in a developing and fun way.
+- People who simply want to spend some time in a developing and fun way.
 
 ## User Stories
 
@@ -83,7 +83,7 @@ This is a simple website where you can play the classic game of memory.
 
 1. As a current user, I want to navigate to the game as easily and quickly as possible.
 
-2. As a current user, I want to be able to see my high score in a simple way.
+2. As a current user, I want to be able to see my high score simply.
 
 ## Development Planes
 
@@ -100,7 +100,7 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 ### Scope
 
-- The site is for single game people who want to improve in that genre.
+- The site is for single-game people who want to improve in that genre.
 
 - Users who find this website are most certainly one who is looking for just and precisely for a Memory game.
 
@@ -114,18 +114,18 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 - ##### Functionality Requirements
   - The user will be able to:
-    - Easily navigate through the site in order to find the information they want.
+    - Easily navigate through the site to find the information they want.
     - Easily start and play the memory game.
 
 ### Structure
 
-The information architecture was organized in a hierarchical tree structure in order to ensure that users could navigate through the site with ease and efficiency, with the following results:
+The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
 ![Hierarchical tree structure](assets/readme-resources/Structure.jpg)
 
 ### Skeleton
 
-Wireframe mockup were created in a Figma Workspace with providing a positive user experience in mind:
+Wireframe mockup was created in a Figma Workspace with providing a positive user experience in mind:
 
 **_[Link to Figma Wireframes as PDF](assets/readme-resources/Figma.pdf)_**
 
@@ -142,13 +142,13 @@ Wireframe mockup were created in a Figma Workspace with providing a positive use
 
 ### Color Scheme
 
-The main colors used throughout the website are a mixture of dark green, White and orange.
+The main colors used throughout the website are a mixture of dark green, white, and orange.
 
 Also has black text so that there will be a distinct difference, and it will be visible well.
 
-The chosen color scheme are chosen to get a clear and nice view to integrate with.
+The chosen color scheme is chosen to get a clear and nice view to integrate with.
 
-- I Find the color combination on site [COLORS](https://coolors.co/)
+- I find the color combination on-site [COLORS](https://coolors.co/)
 
 ### Typography
 
@@ -161,11 +161,11 @@ Font font-family: Architects Daughter is used throughout the website with Sans S
 The selected image on the home page is modern and simple, reflecting the look and feel of the page and the game.
 The image is captivating and visually represents the site's theme.
 
-The image on index.html is a combination of Code Institute and an happy emoji.
+The image on index.html is a combination of Code Institute and a happy emoji.
 
-In the game itself, on the back Code Institute logo and on the front are used various emojis that I found under free emojis on google.com.
+In the game itself, on the back Code Institute logo and the front are used various emojis that I found under free emojis on google.com.
 
-- The images provides alternative text to use if the element cannot be reproduced.
+- The images provide alternative text to use if the element cannot be reproduced.
 
   [Back to the top](#table-of-contents)
 
@@ -177,7 +177,7 @@ Each page on the website has a consistent responsive navigation system through s
 
 #### Home Page and the Game Page
 
-The home and game page have the same structure in terms of appearance.
+The home and game pages have the same structure in terms of appearance.
 
 ### Existing Features
 
@@ -185,35 +185,35 @@ The home and game page have the same structure in terms of appearance.
 
 - ### Start Page (index.html):
   - Link on top of the start page to info **Info About The Game** (Modal).
-    - Here you can see information about the game. You can also see your best result (if you previously played in the same browser, using localStoraget o save values) as well as links to the game and back to the home page.
-  - At the top in the center of the page you have a fancy image / logo.
+    - Here you can see information about the game. You can also see your best result (if you previously played in the same browser, using local storage o save values) as well as links to the game and back to the home page.
+  - At the top in the center of the page you have a fancy image/logo.
     - The image is clickable and you get to the info page (Modal).
     - Link at the bottom of the start page to the game **Start Memory Game**.
     - Start the memory game immediately.
 - ### Game Page (game.html):
   - At the top left is the timer clock with seconds and tenths.
-  - In the middle of the game page we find three icons / buttons:
-    - The first button is the pause / start button:
+  - In the middle of the game page we find three icons/buttons:
+    - The first button is the pause/start button:
       - Are used if you want to pause the game during the current game.
     - The second button is the restart button:
       - Are used to restart the game.
-    - The third button is the mute or unmute button:
+    - The third button is mute or unmute button:
       - Are used to mute or unmute in the game.
   - At the top right is an exit button that closes the game and redirects the user to the home page (index.html).
   - In the middle of the page is the playing surface where the game itself is played
 
 The Modal that appears when you finish the game shows the round's number of clicks and the time it took to complete the game.
 Also, the record the user has (if there is a previous record).
-At the bottom of the Modal we find two links that goes to **Play Again** and **Back To Main**
+At the bottom of the Modal we find two links that go to **Play Again** and **Back To Main**
 
 - ### 404 page (404.html):
-  - 404 looks similar to the start page with the difference that it is a shocked emoji as the center image instead of a happy emoji as it is on the start page. When you click on the image or text, you get to the start page.
+  - 404 looks similar to the start page with the difference that it is a shocking emoji as the center image instead of a happy emoji as it is on the start page. When you click on the image or text, you get to the start page.
 
 ## Features to Implement in the future
 
 - [x] Make sure that the best result of a game can be saved and stored.
 
-**High Score are finish and ready!** 👍
+**High Score is finish and ready!** 👍
 
 - #### Reason for not featuring in this release
   - ~~Time and skill...~~
@@ -230,7 +230,7 @@ At the bottom of the Modal we find two links that goes to **Play Again** and **B
 
   - Solution [modal exempel use](https://www.w3schools.com/howto/howto_css_modals.asp)
 
-- Problems getting 404.html working no matter where it goes wrong. 404.html works (https://manell0.github.io/MileStone-2-emoji-memory/adsfadfadfadfadfadf) but not if I do slash (/) after the whole URL (https://manell0.github.io/MileStone- 2-emoji-memory / index.html /).Tried to add .htaccess file with the content (ErrorDocument 404 https://manell0.github.io/MileStone-2-emoji-memory/index.html/404.html) but it does not work ?! Tried to put 404.html in all directories, but it does not work ?!
+- Problems getting 404.html working no matter where it goes wrong. 404.html works (https://manell0.github.io/MileStone-2-emoji-memory/adsfadfadfadfadfadf) but not if I do slash (/) after the whole URL (https://manell0.github.io/MileStone- 2-emoji-memory / index.html /).Tried to add .htaccess file with the content (ErrorDocument 404 https://manell0.github.io/MileStone-2-emoji-memory/index.html/404.html) but it does not work ?! Tried to put 404.html in all directories, but it does not work ?!
 
   - SOLUTION: I changed all relative file paths in 404.html to absolute file paths and that solved my problem. So now 404.html works as it should! 😀
 
@@ -268,8 +268,8 @@ At the bottom of the Modal we find two links that goes to **Play Again** and **B
 
 # Deployment
 
-- This project was developed using Visual Studio Code, committed to git and pushed to GitHub using the upload file-system on GitHub.
-- Some updates was done direct in edit mode on GitHub.
+- This project was developed using Visual Studio Code, committed to git, and pushed to GitHub using the upload file system on GitHub.
+- Some updates were done directly in edit mode on GitHub.
 
 ## Deploying on GitHub Pages
 
@@ -279,7 +279,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 2. Locate the GitHub Repository.
 3. At the top of the repository, select Settings from the menu items.
 4. Scroll down the Settings page to the "GitHub Pages" section.
-5. Under "Source" click the drop-down menu labelled "None" and select "Master Branch".
+5. Under "Source" click the drop-down menu labeled "None" and select "Master Branch".
 6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 7. Scroll back down to the "GitHub Pages" section to retrieve the deployed link.
 8. At the time of submitting this Milestone project the Development Branch and Master Branch are identical.
@@ -305,7 +305,7 @@ How to run this project locally:
 
 How to run this project within a local IDE, such as VSCode:
 
-1. Log into GitHub or create an account.
+1. Log in to GitHub or create an account.
 2. Locate the GitHub Repository.
 3. Under the repository name, click "Clone or download".
 4. In the Clone with HTTPs section, copy the clone URL for the repository.
@@ -326,21 +326,21 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 
 # Credits
 
-- I have used [Rebecca Tracey-Timoneys](https://github.com/rebeccatraceyt) README file [KryanLive](https://github.com/rebeccatraceyt/KryanLive/blob/master/README.md) as a guide / template for this README file.
+- I have used [Rebecca Tracey-Timoneys](https://github.com/rebeccatraceyt) README file [KryanLive](https://github.com/rebeccatraceyt/KryanLive/blob/master/README.md) as a guide/template for this README file.
 
-- A tutorial how to flip a image
+- A tutorial on how to flip an image
   [rotate card](https://www.youtube.com/watch?v=0iAlXko9xJk)
 
 - I have learned a lot from **Marina Ferreira** and this is a good guide that I have taken inspiration from in my project
   [flex-box](https://marina-ferreira.github.io/tutorials/css/flexbox/#introduction)
 
-- IIFE (Immediately Invoked Function Expression) that i use for my shuffle function
+- IIFE (Immediately Invoked Function Expression) that I use for my shuffle function
   [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 - I have used this page to implement my Modals in my project
-  [modal exempel use](https://www.w3schools.com/howto/howto_css_modals.asp)
+  [modal example use](https://www.w3schools.com/howto/howto_css_modals.asp)
 
-- I use Easy timer in my projectas I learned on this page
+- I use Easy timer in my projects I learned on this page
   [EasyTimer.js](https://albert-gonzalez.github.io/easytimer.js/)
 - I use [Audio](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio)
 - I have looked and taken inspiration from these pages that I got recommended from my mentor:
@@ -351,16 +351,16 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 
 ## Media
 
-- The image on the index.html and the back side image in the memory game was sourced from google and is the Code Institute logo
+- The image on the index.html and the backside image in the memory game was sourced from Google and is the Code Institute logo
 
-  - The smileys used as front images is found on google
+  - The smileys used as front images are found on google
 
 ## Code
 
-The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
+The developer consulted multiple sites to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
 
 - [Stack Overflow](https://stackoverflow.com/)
-- [W3Schools](https://www.w3schools.com/) used a lot, and Modal pop up window came from there.
+- [W3Schools](https://www.w3schools.com/) used a lot, and the Modal pop-up window came from there.
 - [Bootstrap](https://getbootstrap.com/) used for my grid system throughout the site
 - [CSS Tricks](https://css-tricks.com/) used for various spacing tricks and placement technology
 - [COLORS](https://coolors.co/)
