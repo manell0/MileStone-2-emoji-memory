@@ -69,7 +69,6 @@ pauseStart.onclick = function () {
 		onOff = true;
 		pauseStart.innerHTML = ' <i class="fas fa-play" title="Pause the game"></i> ';
 	}
-	console.log('pauseStart clicked');
 };
 
 // ---------------------Check if the image shuld turn
@@ -185,7 +184,6 @@ function Modal() {
 
 			</b> tenths!<br><b style="font-size:16px; color: rgb(0, 0, 0)"> 💥${theBestResult} 💥`;
 	//localStorage.clear();
-	console.log(theBestResult);
 	timer.stop();
 }
 
@@ -234,7 +232,6 @@ function bestResult(clicks, timer) {
 		}
 	} else {
 		// Sorry! No Web Storage support..
-		console.log('Sorry! No Web Storage support');
 		return 'Sorry! No Web Storage support';
 	}
 }
