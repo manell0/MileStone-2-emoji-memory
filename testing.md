@@ -26,7 +26,7 @@
    
 2. As a new user, I want to play the classic single-game memory.
 
-   -It is easy to find where and how to play Emoji memory wherever you are on the site.
+   - It is easy to find where and how to play Emoji memory wherever you are on the site.
 
 3. As a new user, I Want to easily have the ability to get the rules and criteria of the game.
 
