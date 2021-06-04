@@ -1,13 +1,17 @@
 // ------------ JS file for info modal in index.html
 let modal = document.getElementById('myModal');
 
+// Open info Modal 
 function infoFunction() {
 	Modal();
 }
+
+// Starts the game
 function startGame() {
 	location.href = 'game.html';
 }
 
+// Declares variables to Modal
 const closeModal = document.getElementsByClassName('close')[0];
 const closeMain = document.getElementById('close');
 const again = document.getElementsByClassName('again')[0];
@@ -20,8 +24,9 @@ if (localStorage.length === 0) {
 // Text link, open the modal
 function Modal() {
 	modal.style.display = 'block';
-} //--------------------------------------
+} 
 
+// Close function
 closeMain.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'index.html';
