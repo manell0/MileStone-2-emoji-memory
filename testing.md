@@ -99,6 +99,22 @@ The Modal that is automatically displayed when you have completed a game works a
 - All functionality in the game is controlled and works satisfactorily
 - All Modals are checked and work satisfactorily in all screen sizes
 
+---
+
+![Testing ScreenShot](assets/readme-resources/alert-confirm.jpg)
+
+#### Fig 1:
+
+- An alert box appears when a user has paused the game and tries to click on the game board.
+  - The alert box's warning sound and other functionality work as intended.
+
+#### Fig 2:
+
+- An confirm box appears when a user press the restart icon to confirm whether the user wants to restart the game or not.
+  - The confirm box warning sound and other functionality work as intended.
+
+---
+
 ## Automated Testing
 
 ### code Validation
@@ -142,6 +158,8 @@ Screenshot from index page (desktop device)
 ![lighthouse test](assets/readme-resources/lighthouse-index.jpg)
 
 ## User Testing
+
+Corrected and checked with https://www.corrector.co/
 
 Family members were asked to review the site and documentation to point out any bugs and/or user experience issues. Their helpful advice throughout the process led to many UX changes in order to create a better experience.
 
