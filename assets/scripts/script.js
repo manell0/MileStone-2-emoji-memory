@@ -12,10 +12,11 @@ let clicksTop = 0;
 let restart = document.getElementById('restart');
 
 //------------------------------------- Sounds
-let klickSound = new Audio('assets/sounds/click_x.wav');
-let wrongSound = new Audio('assets/sounds/wrong.wav');
-let rightSound = new Audio('assets/sounds/right.wav');
-let finishSound = new Audio('assets/sounds/finish.wav');
+const klickSound = new Audio('assets/sounds/click_x.wav');
+const wrongSound = new Audio('assets/sounds/wrong.wav');
+const rightSound = new Audio('assets/sounds/right.wav');
+const finishSound = new Audio('assets/sounds/finish.wav');
+const warningSound = new Audio('assets/sounds/warning.wav');
 let mute = true;
 //------------------------------- Sound on / off
 let muteSound = document.getElementById('mute-sound');
@@ -39,7 +40,7 @@ muteSound.onclick = function () {
 
 // --------------------------------------- Restart icon / button
 restart.onclick = function () {
-	if (confirm('Are you sure that you want to restart the game, press OK?')) {
+	if (confirm('Are you sure that you want to restart the game, press OK?',warningSound.play())) {
 		location.reload();
 	}
 };
@@ -74,6 +75,7 @@ pauseStart.onclick = function () {
 // ---------------------Check if the image shuld turn
 function turnImage() {
 	if (onOff === false) {
+		warningSound.play();
 		alert('You paused the game when you pressed  the icon (▶) and had to press the icon (⏸) to start the game again!');
 	}
 	if (lockSurface) {
