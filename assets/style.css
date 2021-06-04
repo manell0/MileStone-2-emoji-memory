@@ -120,8 +120,6 @@ h3 {
 
 
 /* The Modal  */
-
-
 /*-----Modal (https://www.w3schools.com/howto/howto_css_modals.asp) -----*/
 
 .modal {
@@ -374,7 +372,6 @@ h3 {
         font-size: 16px;
     }
     .container {
-        /*width: 95vh;*/
 	width: fit-content;
     }
 }
@@ -405,7 +402,6 @@ h3 {
         margin-left: 3vh;
     }
     .container {
-        /*width: 95vh;*/
 	width: fit-content;
     }
 }
