@@ -51,7 +51,7 @@ let pauseStart = document.getElementById('pause-start');
 
 // ---------------- Function print out the time counter (top left)
 timer.addEventListener('secondTenthsUpdated', function () {
-	let scoreBoard = `Clicks: ${clicksTop} <br>Time:  ${timer.getTimeValues().toString(['seconds', 'secondTenths'])}`;
+	let scoreBoard = `Clicks: ${clicksTop} <br>Time:  ${timer.getTimeValues().toString(['minutes', 'seconds', 'secondTenths'])}`;
 	document.getElementById('scores').innerHTML = scoreBoard;
 });
 
