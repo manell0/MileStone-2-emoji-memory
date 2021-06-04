@@ -21,11 +21,12 @@
 1. As a new user, I want to easily navigate through the website to find the relevant content, effortlessly.
 
    - The navigation is clearly defined and easily navigable for users to find and use.
-
-2. As a new user, I want to play the classic single-game memory.
-
    - The info and game pages are appropriately named for users wishing to find out about the game.
    - The info and game pages are found easily on each page, no matter the device.
+   
+2. As a new user, I want to play the classic single-game memory.
+
+   -It is easy to find where and how to play Emoji memory wherever you are on the site.
 
 3. As a new user, I Want to easily have the ability to get the rules and criteria of the game.
 
