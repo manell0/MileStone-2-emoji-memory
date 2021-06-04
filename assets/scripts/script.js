@@ -127,12 +127,14 @@ function checkIfSame() {
 	}
 }
 
+//-------------- Take away eventlistener 
 function disableCards() {
 	imgOne.removeEventListener('click', turnImage);
 	imgTwo.removeEventListener('click', turnImage);
 	resetSurface();
 }
 
+//--------------- Dont rotate image, remove spin class
 function dontSpinImg() {
 	lockSurface = true;
 	// Timeout so the image have the time to finish
@@ -169,7 +171,6 @@ function myFunction(img) {
 let modal = document.getElementById('myModal');
 let closeModal = document.getElementsByClassName('close')[0];
 let closeMain = document.getElementById('close');
-
 let again = document.getElementsByClassName('again')[0];
 
 // When the user finish the game, open the modal whit the result
@@ -189,14 +190,15 @@ function Modal() {
 }
 
 //--------------------------------- Save the best restult ----------------
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
 function bestResult(clicks, timer) {
 	// Turn all variables into strings as Window.localStorage only takes strings
 	let clicksStr = clicks.toString();
 	let timeMinStr = timer.getTimeValues().toString(['minutes']);
 	let timeSekStr = timer.getTimeValues().toString(['seconds']);
 	let timeTenthsStr = timer.getTimeValues().toString(['secondTenths']);
-	//let bestResultStrSaved = `Your best result: <br> ${clicksStr} clicks, in ${timeMinStr} minutes and ${timeSekStr} seconds`;
-	//--------------------------------------------------------
+	
 	//Make the time variables into number so i can use them to compare
 	timeMinNum = parseInt(timeMinStr, 10);
 	timeSekNum = parseInt(timeSekStr, 10);
@@ -236,9 +238,8 @@ function bestResult(clicks, timer) {
 		return 'Sorry! No Web Storage support';
 	}
 }
-//-------------------------------------------------
 
-// Clicks on <span> (x on the right), close the modal
+// Clicks on <span> (x on the top right), close the modal
 closeModal.onclick = function () {
 	modal.style.display = 'none';
 	location.href = 'index.html';
