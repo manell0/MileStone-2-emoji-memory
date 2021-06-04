@@ -176,17 +176,15 @@ let again = document.getElementsByClassName('again')[0];
 function Modal() {
 	modal.style.display = 'block';
 	let theBestResult = bestResult(clicks, timer);
-	document.getElementById(
-		'game-result'
-	).innerHTML = `You solved this memory in <b style="color: rgb(0, 255, 0)";>${clicks}</b> clicks with time <b style="color: rgb(0, 255, 0)";>${timer
+	document.getElementById('game-result').innerHTML = `Memory solved in: <b style="color: rgb(0, 255, 0)";>${clicks}
+	</b> clicks <b style="color: rgb(0, 255, 0)";>${timer
 		.getTimeValues()
-		.toString(['minutes'])}</b> Minutes and <b style="color: rgb(0, 255, 0)";>${timer
-		.getTimeValues()
-		.toString([
-			'seconds',
-			'secondTenths',
-		])}</b> Seconds!<br><b style="font-size:16px; color: rgb(0, 0, 0)"> 💥${theBestResult}💥`;
+		.toString(['minutes'])}</b> Minutes <b style="color: rgb(0, 255, 0)";>${timer.getTimeValues().toString(['seconds'])}
+		</b>  seconds <b style="color: rgb(0, 255, 0)";>${timer.getTimeValues().toString(['secondTenths'])} 
 
+			</b> tenths!<br><b style="font-size:16px; color: rgb(0, 0, 0)"> 💥${theBestResult} 💥`;
+	//localStorage.clear();
+	console.log(theBestResult);
 	timer.stop();
 }
 
