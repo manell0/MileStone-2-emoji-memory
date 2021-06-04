@@ -5,6 +5,7 @@
 ## Milestone project 2 (Code Institute)
 
 This is a simple website where you can play the classic game of memory.
+**[Check out the page here](https://manell0.github.io/MileStone-2-emoji-memory/index.html)**
 
 ## Table of contents
 
