@@ -354,9 +354,13 @@ Further reading and troubleshooting on cloning a repository from GitHub [**_here
 
 ## Media
 
-- The image on the index.html and the backside image in the memory game was sourced from Google and is the Code Institute logo
+- The image on the index.html and the backside image in the memory game was sourced from Google and is the Code Institute logo.
 
-  - The smileys used as front images are found on google
+  - The smileys used as front images are found on google.
+
+- Sound in the game
+
+   - I found the sounds in the game on my computer and have no idea where they originally come from.
 
 ## Code
 
