@@ -124,7 +124,7 @@ With these goals in mind, a strategy table was created to determine the trade-of
 
 The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
-![Hierarchical tree structure](assets/readme-resources/Structure.jpg)
+![Hierarchical tree structure](static/readme-resources/Structure.jpg)
 
 ### Skeleton
 
